@@ -12,9 +12,10 @@ config-sparse:
             contents:
               suggested-value: true
         ai_attackwave:
-          enabled:
-            contents:
-              suggested-value: true
+          contents:
+            suggested-value:
+              enabled: true
+              sliderValue: 7
         ai_access:
           enabled:
             contents:
@@ -132,6 +133,72 @@ config-sparse:
           enabled:
             contents:
               suggested-value: true
-  plugins: {}
+        ai_nosleep:
+          enabled:
+            contents:
+              suggested-value: true
+        ai_housing:
+          build_housing:
+            contents:
+              suggested-value:
+                enabled: true
+                sliderValue: 5
+          campfire_housing:
+            contents:
+              suggested-value:
+                enabled: true
+                sliderValue: 8
+          delete_housing:
+            enabled:
+              contents:
+                suggested-value: true
+        ai_resources_rebuy:
+          flour:
+            contents:
+              suggested-value:
+                enabled: true
+                sliderValue: 2
+          iron:
+            contents:
+              suggested-value:
+                enabled: true
+                sliderValue: 36
+          wood:
+            contents:
+              suggested-value:
+                enabled: true
+                sliderValue: 36
+        ai_demolish:
+          ai_demolish_walls:
+            enabled:
+              contents:
+                suggested-value: true
+          ai_demolish_trapped:
+            enabled:
+              contents:
+                suggested-value: true
+        o_fix_map_sending:
+          enabled:
+            contents:
+              suggested-value: true
+        o_fix_rapid_deletion_bug:
+          enabled:
+            contents:
+              suggested-value: true
+        o_restore_arabian_engineer_speech:
+          enabled:
+            contents:
+              suggested-value: true
+        o_fast_placing:
+          enabled:
+            contents:
+              suggested-value: true
+  plugins:
+    ucp2-ai-files:
+      config: {}
+    ucp2-aic-patch:
+      config: {}
+    ucp2-vanilla-fixed-aiv:
+      config: {}
 meta:
   version: 1.0.0
